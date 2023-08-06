@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLICATION FORM</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+
+    <style>
+     
+
+        body {
+        font-family: Arial, sans-serif;
+        background-image: url(office.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .heading {
+        text-align: center;
+        margin-top: 30px;
+        margin: 0;
+        color: black;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .fullform {
+        width: 90%;
+        max-width: 800px;
+        margin: 5% auto;
+        display: flex;
+        justify-content: space-between;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        padding: 20px;
+        border-radius: 10px;
+       
+    }
+
+    .form1,
+    .form2 {
+        flex: 1;
+        margin: 10px;
+    }
+
+    
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: black;
+        font-weight: bold;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 8px;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+        border: 1px solid #ccc;
+    }
+
+    select,
+    textarea {
+        height: 40px;
+    }
+
+    button {
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 5px;
+        font-size: 18px;
+        background-color: lawngreen;
+    }
+
+    button:hover {
+        background-color: lawngreen;
+    }
+
+
+    @media (max-width: 700px) {
+        .fullform {
+            flex-direction: column;
+        }
+    }
+
+
+
+      
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+    </div>
+
+    <div class="heading">
+        <h3>EMPLOYEE APPLICATION FORM</h3>
+    </div>
+  
+
+    <div class="fullform">
+        <div class="form1">
+            <form>
+                <label for="Register Here"> Register Here : </label>
+                <br>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Email">
+        
+                <br>
+                <br>
+                <input type="password" name="password" id="password" placeholder="password">
+        
+                <br>
+                <br>
+                <input type="password" name="password" id="password" placeholder=" confirm password">
+        
+             
+                <br>
+                <br>
+                <select name="Security Questions" id="edu">
+                    <option value="" disabled selected hidden>Security Questions</option>
+                    <option value="Name of your First School">Name of your First School</option>
+                    <option value="Name of your Favourite book">Name of your Favourite book</option>
+                    <option value="Name of your Pet">Name of your Pet</option>
+                    
+                    
+                </select>
+        
+                <br>
+                <br>
+    
+                <textarea name="textArea1" id="textArea1" cols="25" rows="7" placeholder="Address.."></textarea>
+        
+    
+                <br>
+                <br>
+    
+                <label for="Qualifications:"> Qualifications: </label>
+                
+                <br>
+                <br>
+                <select name="Select University" id="edu">
+                    <option value="" disabled selected hidden>Select University</option>
+                    <option value="IPU">IPU</option>
+                    <option value="DTU">DTU</option>
+                    <option value="NSUT">NSUT</option>
+                    <option value="Others">Others</option>
+    
+                </select>
+    
+                <br>
+                <br>
+    
+                <select name="Highest Qualification" id="edu">
+                    <option value="" disabled selected hidden>Highest Qualification</option>
+                    <option value="Bachelors">Bachelors</option>
+                    <option value="Masters">Masters</option>
+                    <option value="Ph.D">Ph.D</option>
+                    <option value="Others">Others</option>
+    
+                </select>
+    
+                <br>
+                <br>
+    
+                <select name="Grade Points" id="edu">
+                    <option value="" disabled selected hidden>Grade Points</option>
+                    <option value="9.0- 10.0">9.0 -10.0</option>
+                    <option value="8.0-9.0">8.0-9.0</option>
+                    <option value="less than 8.0">less than 8.0</option>
+                </select>
+    
+                <br>
+                <br>
+    
+                <button>Submit Application</button>
+            </form>
+           
+        </div>
+    
+        <div class="form2">
+            <form >
+                <label for="Your Details :"> Your Details : </label>
+                <br>
+                <br>
+                <input type="text" name="First Name" id="First Name" placeholder="First Name">
+                <br>
+                <br>
+                <input type="text" name="Last Name" id="Last Name" placeholder="Last Name">
+                <br>
+                <br>
+    
+                <label for="Relocation Required :">Relocation Required :</label>
+                <input type="radio" name="radio" id="radio1">
+                
+                <label for="radio1">YES</label>
+    
+               
+    
+                <input type="radio" name="radio" id="radio2">
+                
+                <label for="radio2">NO</label>   
+                <br>
+                <br>
+    
+                <select name="Grade Points" id="edu">
+                    <option value="" disabled selected hidden>Country: </option>
+                    <option value="INDIA">INDIA</option>
+                    <option value="SAARC Countries">SAARC Countries</option>
+                    <option value="Others">Others</option>
+                </select>
+                <br>
+                <br>
+    
+                <input type="tel" name="tel" id="tele" placeholder="Phone">
+    
+                <br>
+                <br>
+    
+             
+            <input type="date" id="datepicker">
+    
+            <br>
+            <br>
+            <br>
+    
+            <input type="file" name="file" id="file">
+    
+            </form>
+            
+        </div>
+    </div>
+    
+
+</body>
+</html>
